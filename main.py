@@ -175,7 +175,6 @@ def update_csv(group_picks, lottery_played, file_name):
 
 if __name__ == '__main__':
     print("Running")
-    print("TESTING")
     print(dt.datetime.now(tz=pytz.timezone('EST')))
     update_csv(group_picks=group_picks, lottery_played=lottery_played, file_name="data/lotto_max_stats2.csv")
 
