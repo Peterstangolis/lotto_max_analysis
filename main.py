@@ -8,6 +8,7 @@ import pandas as pd
 import datetime as dt
 import pytz
 import lxml
+import pickle
 
 ## Get the lottery cards from the website
 def scrape_lottery_cards(url):
@@ -147,12 +148,15 @@ def update_csv(group_picks, lottery_played, file_name):
 
     df = load_df(filename=file_name)
 
-    last_winning_numbers = df.iloc[-1]["Numbers Drawn"]
-    last_winning_numbers = last_winning_numbers.replace("[", "", 3)
-    last_winning_numbers = last_winning_numbers.replace("]", "", 2)
-    last_winning_numbers = [int(e) for e in last_winning_numbers.split(",")]
-    print(last_winning_numbers, type(last_winning_numbers))
-    print(row_to_add["Numbers Drawn"])
+    try:
+        last_winning_numbers = df.iloc[-1]["Numbers Drawn"]
+        last_winning_numbers = last_winning_numbers.replace("[", "", 3)
+        last_winning_numbers = last_winning_numbers.replace("]", "", 2)
+        last_winning_numbers = [int(e) for e in last_winning_numbers.split(",")]
+        print(last_winning_numbers, type(last_winning_numbers))
+        print(row_to_add["Numbers Drawn"])
+    except:
+        last_winning_numbers = []
 
     new_row_series = pd.Series(row_to_add)
     df2 = pd.concat([df, new_row_series.to_frame().T], ignore_index=True)
@@ -167,9 +171,11 @@ def update_csv(group_picks, lottery_played, file_name):
         new_row_series = pd.Series(row_to_add)
         df2 = pd.concat([df, new_row_series.to_frame().T], ignore_index=True)
 
-        df2.to_csv("lotto_max_stats2.csv",
+        df2.to_csv("data\lotto_max_stats2.csv",
                    lineterminator='\n',
                    index=False)
+
+        df2.to_pickle("data\lotto_max_stats2.pkl")
 
 
 
