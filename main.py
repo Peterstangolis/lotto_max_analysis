@@ -122,6 +122,13 @@ def new_row(group_picks, lottery_played):
     c_i = correct_vs_incorrect(matches_from_picks=matches)
 
     group_prizes = prizes(correct_picks_incorrect_picks=c_i)
+    money = []
+    freeplay = []
+    for p in group_prizes:
+        if p == 'Free Play':
+            freeplay.append(1)
+        else:
+            money.append(p)
 
     add_new_row = {
         df.columns[0]: last_draw_date[-1],
@@ -135,8 +142,9 @@ def new_row(group_picks, lottery_played):
         df.columns[8]: matches,
         df.columns[9]: c_i,
         df.columns[10]: group_prizes,
-        df.columns[11]: sum(group_prizes),
-        df.columns[12]: -(sum(bet_amount)) - sum(group_prizes)
+        df.columns[11]: sum(money),
+        df.columns[12]: len(freeplay),
+        df.columns[13]: -(sum(bet_amount)) - sum(money)
 
     }
 
