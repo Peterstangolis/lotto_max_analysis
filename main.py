@@ -1,6 +1,6 @@
 
 from variables import lottery_guru_url, lotto_max_prizes, \
-    bet_amount, lotto_name, group_picks, lottery_played, bet_amount, lotto_max_picks
+    bet_amount, lotto_name, group_picks, lottery_played_lotto_max, bet_amount, lotto_max_picks
 
 import requests
 from bs4 import BeautifulSoup as BS
@@ -64,19 +64,22 @@ def matched_numbers(picks, lotto_played):
     bonus_number = last_winning_numbers[-1]
     last_winning_numbers = last_winning_numbers[0:-1]
 
-    matches = dict()
+    if len(picks) >= 1:
+        matches = dict()
+        for e, nums in enumerate(picks):
+            matches[f"Line_{e + 1}"] = dict()
+            matched_picks = [x for x in nums if x in last_winning_numbers]
+            matched_bonus = [x for x in nums if x == bonus_number]
+            # print(f"Regular Pick Matches: {matched_picks}")
+            # print(f"Bonus Number Matched: {matched_bonus}")
+            matches[f"Line_{e + 1}"][f"Number_Matches_{e + 1}"] = matched_picks
+            if len(matched_bonus) == 1:
+                matches[f"Line_{e + 1}"][f"Bonus_Match_{e + 1}"] = matched_bonus
+            else:
+                matches[f"Line_{e + 1}"][f"Bonus_Match_{e + 1}"] = []
+    else:
+        matches = []
 
-    for e, nums in enumerate(picks):
-        matches[f"Line_{e + 1}"] = dict()
-        matched_picks = [x for x in nums if x in last_winning_numbers]
-        matched_bonus = [x for x in nums if x == bonus_number]
-        # print(f"Regular Pick Matches: {matched_picks}")
-        # print(f"Bonus Number Matched: {matched_bonus}")
-        matches[f"Line_{e + 1}"][f"Number_Matches_{e + 1}"] = matched_picks
-        if len(matched_bonus) == 1:
-            matches[f"Line_{e + 1}"][f"Bonus_Match_{e + 1}"] = matched_bonus
-        else:
-            matches[f"Line_{e + 1}"][f"Bonus_Match_{e + 1}"] = []
     return matches, last_winning_numbers, bonus_number, last_draw_date, next_draw_date, jackpot
 
 
@@ -190,5 +193,5 @@ def update_csv(group_picks, lottery_played, file_name):
 if __name__ == '__main__':
     print("Running")
     print(dt.datetime.now(tz=pytz.timezone('EST')))
-    update_csv(group_picks=group_picks, lottery_played=lottery_played, file_name="data/lotto_max_stats2.csv")
+    update_csv(group_picks=group_picks, lottery_played=lottery_played_lotto_max, file_name="data/lotto_max_stats2.csv")
 
