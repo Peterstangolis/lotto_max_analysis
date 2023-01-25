@@ -66,11 +66,11 @@ encore_picks = [
 lines_picked = len(group_picks)
 
 bet_amount = [
-
+5.00, 5.00
 ]
 
 bet_amounts_649 = [
-5.00, 5.00
+
 ]
 
 encore_amount = [
