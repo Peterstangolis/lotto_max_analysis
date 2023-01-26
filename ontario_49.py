@@ -134,6 +134,7 @@ if ontario_49_played:
         row_to_add = new_row_49(group_picks=group_picks, lottery_played=lottery_played, ticket_date=ticket_date)
 
         df = load_df(filename=file_name)
+        print(row_to_add["Numbers Drawn"])
 
         try:
             last_winning_numbers = df.iloc[-1]["Numbers Drawn"]

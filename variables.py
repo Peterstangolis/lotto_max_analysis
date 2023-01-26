@@ -20,8 +20,8 @@ days = ['Tuesday', 'Friday']
 
 ticket_date = '20-Jan-2023'
 
-next_649_draw_date = '25-Jan-2023'
-next_49_draw_date = '25-Jan-2023'
+next_649_draw_date = '25 Jan 2023'
+next_49_draw_date = '25 Jan 2023'
 
 
 lotto_max_prizes = {
