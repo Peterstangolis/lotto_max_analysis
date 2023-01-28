@@ -1,6 +1,6 @@
 lottery_played_lotto_max = True
 lottery_played_649 = True
-encore_played = True
+encore_played = False
 ontario_49_played = True
 
 lottery_guru_url = 'https://lotteryguru.com/ontario-lottery-results'
@@ -19,10 +19,10 @@ time = '22:30 EST'
 
 days = ['Tuesday', 'Friday']
 
-ticket_date = '20-Jan-2023'
+ticket_date = '28-Jan-2023'
 
-next_649_draw_date = '_ Jan 2023'
-next_49_draw_date = '_ Jan 2023'
+next_649_draw_date = '28 Jan 2023'
+next_49_draw_date = '28 Jan 2023'
 next_encore_date = ''
 
 
