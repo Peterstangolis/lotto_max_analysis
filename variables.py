@@ -1,7 +1,7 @@
-lottery_played_lotto_max = False
-lottery_played_649 = False
-encore_played = False
-ontario_49_played = False
+lottery_played_lotto_max = True
+lottery_played_649 = True
+encore_played = True
+ontario_49_played = True
 
 lottery_guru_url = 'https://lotteryguru.com/ontario-lottery-results'
 
@@ -80,9 +80,6 @@ encore_combination = {
 }
 
 
-
-
-
 ## Variables for lottery number picks of the group
 lotto_name = "Lotto Max"
 lotto_649_name = "Lotto 6/49"
@@ -92,23 +89,22 @@ lotto_encore = "Encore"
 draw_date = " "
 
 group_picks = [
-    [2,20,22,24,36,39,46],
-    [3,25,26,30,28,45,50],
-    [24,26,32,38,39,41,42],
-    [3,6,13,22,38,40,49],
-    [11,12,24,27,30,36,42],
-    [4,11,23,28,32,37,43]
+    [5,6,10,14,30,33,50],
+    [5,14,15,16,17,27,49],
+    [4,5,9,18,24,33,46],
+    [4,5,11,16,18,38,46],
+    [3,8,12,14,26,31,50],
+    [1,12,13,17,23,29,50]
 ]
 
 group_649_picks = [
-    [3,7,13,22,31,42]
+    [6,9,13,21,25,47],
+    [1,3,11,18,22,49]
 
 ]
 
 group_49_picks = [
-    [1,6,7,23,37,44],
-    [7,11,15,20,34,46]
-
+    [3,13,22,33,39,47],
 ]
 
 group_encore_picks = [
@@ -122,11 +118,11 @@ bet_amount = [
 ]
 
 bet_amounts_649 = [
-    3.00
+    3.00, 3.00
 ]
 
 bet_amounts_49 = [
-1.00, 1.00
+0.00
 ]
 
 bet_amount_encore = [

@@ -11,13 +11,13 @@ def encore_numbers():
     lottery_cards = scrape_lottery_cards(lottery_guru_url)
 
     results = dict()
-    for n in [11,12]:
+    for n in [10,11,12]:
 
         encore_card = lottery_cards[n]
         name = encore_card.find("div", class_="column is-10 lg-name")
         name = name.text
         numbers = encore_card.find_all("ul", class_="lg-numbers")
-        print(numbers)
+
 
         if name == "Encore":
             print("Match")
@@ -33,7 +33,29 @@ def encore_numbers():
 
             results[f"card_{n}"] = [encore_numbers, last_result_date, next_result_date]
 
-
+            print(results[f"card_{n}"][0], results[f"card_{n}"][1], results[f"card_{n}"][2])
             return results[f"card_{n}"][0], results[f"card_{n}"][1], results[f"card_{n}"][2]
 
+
+if encore_played:
+
+    def matched_numbers_encore(picks, lotto_played):
+        last_winning_numbers, last_draw_date, next_draw_date = encore_numbers()
+        last_draw_date_1 = last_draw_date[-2]
+        last_draw_time = last_draw_date[-1]
+        next_draw_date_1 = next_draw_date[-2]
+        next_draw_time = next_draw_date[-1]
+
+
+        if len(picks) >= 1:
+            matches = dict()
+            last_drawn_encore = dict()
+            for e, num in enumerate(last_winning_numbers):
+                last_drawn_encore[f"n_{e}"] = num
+        print(last_drawn_encore, last_draw_date_1, last_draw_time, next_draw_date_1, next_draw_time)
+
+
+
+#encore_numbers()
+matched_numbers_encore(picks=group_encore_picks, lotto_played=encore_played)
 
