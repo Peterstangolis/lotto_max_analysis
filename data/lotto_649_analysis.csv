@@ -1,2 +1,3 @@
 Draw Date,Ticket Date,Weekday,Lottery,Numbers Drawn,Bonus Number,Played,Group Picks,Bet Amounts,Matched Numbers,Correct vs Incorrect,Group Prizes,Winnings,FreePlay,BetAmount vs Winnings
 25 Jan 2023,25 Jan 2023,Wednesday,Lotto 6/49,"[5, 13, 24, 33, 35, 41]",43,True,"[[3, 7, 13, 22, 31, 42]]",[3.0],"{'Line_1': {'Number_Matches_1': [13], 'Bonus_Match_1': []}}",['1/6'],[0],0,0,-3.0
+28 Jan 2023,28 Jan 2023,Saturday,Lotto 6/49,"[5, 12, 15, 26, 46, 48]",17,True,"[[6, 9, 13, 21, 25, 47], [1, 3, 11, 18, 22, 49]]","[3.0, 3.0]","{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}, 'Line_2': {'Number_Matches_2': [], 'Bonus_Match_2': []}}","['0/6', '0/6']","[0, 0]",0,0,-6.0
