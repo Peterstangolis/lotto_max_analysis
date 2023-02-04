@@ -9,7 +9,7 @@ def lotto_649_numbers():
     lottery_cards = scrape_lottery_cards(lottery_guru_url)
 
     results = dict()
-    for n in [1, 2]:
+    for n in [0, 1, 2,]:
 
         lotto_649_card = lottery_cards[n]
         name = lotto_649_card.find("div", class_="column is-10 lg-name")

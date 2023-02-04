@@ -19,10 +19,10 @@ time = '22:30 EST'
 
 days = ['Tuesday', 'Friday']
 
-ticket_date = '31-Jan-2023'
+ticket_date = '03-Feb-2023'
 
-next_649_draw_date = '01 Feb 2023'
-next_49_draw_date = '01 Feb 2023'
+next_649_draw_date = '04 Feb 2023'
+next_49_draw_date = '04 Feb 2023'
 next_encore_date = '28 Jan 2023'
 
 
@@ -98,31 +98,32 @@ group_picks = [
 ]
 
 group_649_picks = [
-    [17,21,30,35,46,48]
+    [5,16,27,41,44,48],
+    [1,15,19,22,43,48],
+    [16,21,24,29,40,42]
 
 ]
 
 group_49_picks = [
-    [1,27,29,30,37,41],
-    [1,15,19,32,47,49]
+    [7,25,35,36,43,48]
 ]
 
 group_encore_picks = [
-    [3,4,7,6,1,1,9]
+
 ]
 
 lines_picked = len(group_picks)
 
 bet_amount = [
-5.00, 5.00
+5.00
 ]
 
 bet_amounts_649 = [
-    3.00, 3.00
+    3.00, 3.00, 3.00
 ]
 
 bet_amounts_49 = [
-0.00
+1.00
 ]
 
 bet_amount_encore = [
