@@ -1,3 +1,4 @@
 Draw Date,Ticket Date,Weekday,Lottery,Numbers Drawn,Bonus Number,Played,Group Picks,Bet Amounts,Matched Numbers,Correct vs Incorrect,Group Prizes,Winnings,FreePlay,BetAmount vs Winnings
 25 Jan 2023,25 Jan 2023,Wednesday,Ontario 49,"[15, 20, 21, 30, 31, 33]",18,True,"[[1, 6, 7, 23, 37, 44], [7, 11, 15, 20, 34, 46]]","[1.0, 1.0]","{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}, 'Line_2': {'Number_Matches_2': [15, 20], 'Bonus_Match_2': []}}","['0/6', '2/6']","[0, 'Free Play']",0,1,-2.0
 28 Jan 2023,28 Jan 2023,Saturday,Ontario 49,"[2, 3, 16, 17, 27, 36]",26,True,"[[3, 13, 22, 33, 39, 47]]",[0.0],"{'Line_1': {'Number_Matches_1': [3], 'Bonus_Match_1': []}}",['1/6'],[0],0,0,-0.0
+04 Feb 2023,04 Feb 2023,Saturday,Ontario 49,"[4, 9, 14, 15, 18, 42]",30,True,"[[7, 25, 35, 36, 43, 48]]",[1.0],"{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}}",['0/6'],[0],0,0,-1.0
