@@ -99,6 +99,7 @@ if lottery_played_649:
 
         matches, last_winning_numbers, bonus_number, last_draw_date, next_draw_date, jackpot = matched_numbers_649(
             picks=group_649_picks, lotto_played=lottery_played_649)
+        print(last_draw_date, ticket_date)
 
         c_i = correct_vs_incorrect_649(matches_from_picks=matches)
 
