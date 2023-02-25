@@ -1,6 +1,6 @@
 lottery_played_lotto_max = True
 lottery_played_649 = True
-encore_played = True
+encore_played = False
 ontario_49_played = True
 
 lottery_guru_url = 'https://lotteryguru.com/ontario-lottery-results'
@@ -19,10 +19,10 @@ time = '22:30 EST'
 
 days = ['Tuesday', 'Friday']
 
-ticket_date = '21-Feb-2023'
+ticket_date = '24-Feb-2023'
 
-next_649_draw_date = '22 Feb 2023'
-next_49_draw_date = '22 Feb 2023'
+next_649_draw_date = '25 Feb 2023'
+next_49_draw_date = '25 Feb 2023'
 next_encore_date = '21 Feb 2023'
 
 
@@ -89,21 +89,22 @@ lotto_encore = "Encore"
 draw_date = " "
 
 group_picks = [
-    [9,18,19,20,26,28,31],
-    [4,5,27,38,45,50],
-    [4,8,20,37,40,43,50],
-    [7,8,16,17,22,30,35],
-    [7,26,30,32,39,46,48],
-    [7,9,15,16,34,42,47]
+    [2,20,22,24,36,39,46],
+    [3,25,26,30,38,45,50],
+    [24,26,32,38,39,41,42],
+    [3,6,13,22,38,40,49],
+    [11,12,24,27,30,36,42],
+    [4,11,23,28,32,37,43]
 
 ]
 
 group_649_picks = [
-    [1,5,15,20,22,28]
+    [3,7,13,22,31,42]
 ]
 
 group_49_picks = [
-    [7,12,14,19,30,39]
+    [7,11,15,20,34,46],
+    [1,6,7,23,37,44]
 ]
 
 group_encore_picks = [
@@ -121,7 +122,7 @@ bet_amounts_649 = [
     ]
 
 bet_amounts_49 = [
-    1.00
+    1.00, 1.00
 ]
 
 bet_amount_encore = [
