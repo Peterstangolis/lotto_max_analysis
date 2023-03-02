@@ -7,3 +7,4 @@ Draw Date,Ticket Date,Weekday,Lottery,Numbers Drawn,Bonus Number,Played,Group Pi
 18 Feb 2023,18 Feb 2023,Saturday,Lotto 6/49,"[3, 5, 7, 10, 26, 39]",22,True,"[[13, 21, 32, 38, 42, 45], [11, 20, 34, 37, 42, 48]]","[3.0, 6.0]","{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}, 'Line_2': {'Number_Matches_2': [], 'Bonus_Match_2': []}}","['0/6', '0/6']","[0, 0]",0,0,-9.0
 22 Feb 2023,22 Feb 2023,Wednesday,Lotto 6/49,"[3, 19, 24, 25, 27, 43]",34,True,"[[1, 5, 15, 20, 22, 28]]",[3.0],"{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}}",['0/6'],[0],0,0,-3.0
 25 Feb 2023,25 Feb 2023,Saturday,Lotto 6/49,"[2, 23, 24, 25, 39, 40]",21,True,"[[3, 7, 13, 22, 31, 42]]",[3.0],"{'Line_1': {'Number_Matches_1': [], 'Bonus_Match_1': []}}",['0/6'],[0],0,0,-3.0
+01 Mar 2023,01 Mar 2023,Wednesday,Lotto 6/49,"[3, 8, 10, 14, 34, 35]",44,True,"[[5, 9, 19, 23, 34, 43]]",[0.0],"{'Line_1': {'Number_Matches_1': [34], 'Bonus_Match_1': []}}",['1/6'],[0],0,0,-0.0
