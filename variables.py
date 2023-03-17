@@ -21,8 +21,8 @@ days = ['Tuesday', 'Friday']
 
 ticket_date = '14-Mar-2023'
 
-next_649_draw_date = '13 Mar 2023'
-next_49_draw_date = '13 Mar 2023'
+next_649_draw_date = '15 Mar 2023'
+next_49_draw_date = '15 Mar 2023'
 next_encore_date = '21 Feb 2023'
 
 
