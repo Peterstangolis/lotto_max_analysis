@@ -19,10 +19,10 @@ time = '22:30 EST'
 
 days = ['Tuesday', 'Friday']
 
-ticket_date = '17-Mar-2023'
+ticket_date = '21-Mar-2023'
 
-next_649_draw_date = '18 Mar 2023'
-next_49_draw_date = '18 Mar 2023'
+next_649_draw_date = '22 Mar 2023'
+next_49_draw_date = '22 Mar 2023'
 next_encore_date = '21 Feb 2023'
 
 
@@ -89,19 +89,25 @@ lotto_encore = "Encore"
 draw_date = " "
 
 group_picks = [
-    [9, 19, 26, 28, 30, 36, 47],
-    [1, 9, 14, 25, 32, 43, 49],
-    [4, 26, 31, 34, 37, 40, 46]
+    [1,3,5,10,15,40,49],
+    [3,6,11,13,30,38,44],
+    [16,20,27,35,36,37,42]
 
 ]
 
 group_649_picks = [
-    [3, 4, 27, 32, 34, 35]
+    [2,5,8,42,45,48],
+    [4,6,12,18,19,33],
+    [2,22,32,37,42,44],
+    [6,12,19,20,30,47]
+
 
 ]
 
 group_49_picks = [
-    [3, 6, 11, 14, 18, 28]
+    [6,11,18,29,34,49],
+    [4,7,8,10,24,44],
+
 ]
 
 group_encore_picks = [
@@ -115,7 +121,7 @@ bet_amount = [
 ]
 
 bet_amounts_649 = [
-    3.00
+    3.00, 3.00,3.00
     ]
 
 bet_amounts_49 = [
