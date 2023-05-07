@@ -1,7 +1,7 @@
-lottery_played_lotto_max = True
+lottery_played_lotto_max = False
 lottery_played_649 = True
 encore_played = False
-ontario_49_played = True
+ontario_49_played = False
 
 lottery_guru_url = 'https://lotteryguru.com/ontario-lottery-results'
 
@@ -21,7 +21,7 @@ days = ['Tuesday', 'Friday']
 
 ticket_date = '7-Apr-2023'
 
-next_649_draw_date = '08 Apr 2023'
+next_649_draw_date = '06 May 2023'
 next_49_draw_date = '08 Apr 2023'
 next_encore_date = '29 Mar 2023'
 
@@ -95,8 +95,10 @@ group_picks = [
 ]
 
 group_649_picks = [
-    [14,17,31,35,44,49],
-    [5,12,15,28,34,46]
+    [2,10,34,43,47,48],
+    [5,7,31,35,45,49],
+    [1,11,29,36,42,43],
+    [9,15,24,30,32,35]
 
 
 ]
